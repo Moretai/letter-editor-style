@@ -16,9 +16,10 @@
         <div class="editore">
             <button id='leftBtn'>open</button>
             Main Edit Content
+            <button id='rightBtn'>open</button>
         </div>
         <div class="operator">
-            small operator
+            <button id='rightclose'>close</button>
         </div>
     </div>
 
@@ -32,6 +33,16 @@
         $('#leftBtn').click(function(){
             $('.leftset').removeClass('leftsethidden')
         })
+
+        $('#rightclose').click(function(){
+            $('.operator').addClass('operatorhidden')
+        })
+
+        $('#rightBtn').click(function(){
+            $('.operator').removeClass('operatorhidden')
+        })
+
+
     })
            
 
