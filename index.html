@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./main.css">
+    <title>Document</title>
+    <script src="https://cdn.bootcss.com/jquery/2.0.0/jquery.min.js"></script>
+</head>
+<body>
+    <div class="wrap">
+        <div class="leftset">
+            <button id='back'>back</button>
+        </div>
+        <div class="editore">
+            <button id='leftBtn'>open</button>
+            Main Edit Content
+        </div>
+        <div class="operator">
+            small operator
+        </div>
+    </div>
+
+    <script>
+
+    $(document).ready(function(){
+        $("#back").click(function(){
+            $(this).parent().addClass('leftsethidden')
+         })
+
+        $('#leftBtn').click(function(){
+            $('.leftset').removeClass('leftsethidden')
+        })
+    })
+           
+
+    </script>
+</body>
+</html>

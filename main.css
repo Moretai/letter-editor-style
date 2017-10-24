@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.wrap {
+    margin-top: 200px;
+    display: flex;
+}
+
+.leftset  {
+    position: relative;
+    left: 0px;
+    z-index: 1;
+    width: 400px;
+    height: 500px;
+    background: #f0f0f0;
+    transition: all 300ms ease-in-out;
+}
+
+#back {
+    /* width: 200px;
+    height: 200px;
+    background: red;     */
+}
+.leftsethidden {
+    left: 400px;
+}
+
+.editore  {
+    position: relative;
+    z-index: 10;
+    width: 700px;
+    height: 500px;
+    background: pink;
+}
+
+.operator {
+    width: 50px;
+    height: 500px;
+    background: rgb(0,211,189)
+}
